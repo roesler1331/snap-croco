@@ -3,49 +3,92 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Snap Croco Privacy Policy</title>
+<title>Privacy Policy · Snap Croco</title>
+<meta name="description" content="Snap Croco keeps your photos on your iPhone. No analytics, no ads, no account.">
 <style>
-  :root { color-scheme: light dark; --accent: #22b07d; }
-  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 32px 20px 64px; }
-  main { max-width: 680px; margin: 0 auto; }
-  h1 { font-size: 32px; margin: 0 0 4px; }
-  h2 { font-size: 21px; margin: 32px 0 8px; }
-  .muted { opacity: .7; }
-  .lead { font-weight: 600; }
-  a { color: var(--accent); }
+  :root { color-scheme: light dark; --accent: #1f8f62; --bg: #f2f2f7; --card: #ffffff; --text: #1c1c1e; --muted: #6c6c70; --line: rgba(60,60,67,.14); }
+  @media (prefers-color-scheme: dark) { :root { --accent: #4fd39b; --bg: #000; --card: #1c1c1e; --text: #f2f2f7; --muted: #a1a1a6; --line: rgba(84,84,88,.5); } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 72px; }
+  .eyebrow { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: .02em; margin: 0 0 8px; }
+  h1 { font-size: clamp(32px, 6vw, 44px); line-height: 1.1; letter-spacing: -.02em; margin: 0 0 12px; }
+  .intro { color: var(--muted); margin: 0; }
+  .date { color: var(--muted); font-size: 14px; margin: 12px 0 32px; }
+  .card { background: var(--card); border-radius: 20px; padding: 6px 20px; margin-bottom: 16px; }
+  .promise { display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .promise:last-child { border-bottom: 0; }
+  .dot { flex: none; width: 34px; height: 34px; border-radius: 10px; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); display: grid; place-items: center; font-weight: 700; }
+  .promise strong { display: block; font-size: 17px; }
+  .promise span { color: var(--muted); font-size: 15px; }
+  section.card { padding: 18px 20px; }
+  h2 { font-size: 18px; margin: 0 0 6px; }
+  section p { color: var(--muted); margin: 0 0 10px; font-size: 16px; }
+  section p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 32px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Snap Croco Privacy Policy</h1>
-  <p class="muted">Effective November 16, 2026</p>
-  <p class="lead">Snap Croco is made by Nick Roesler. In short: your photos stay on your iPhone, the app has no accounts, ads or analytics, and nothing about you is sent to us.</p>
+  <p class="eyebrow">Snap Croco · Privacy Policy</p>
+  <h1>Your photos are yours.</h1>
+  <p class="intro">Snap Croco is made by Nick Roesler, an independent developer. Everything happens on your device.</p>
+  <p class="date">Effective November 16, 2026</p>
 
-  <h2>Your photos</h2>
-  <p>Snap Croco uses the Photos access you grant to show your photos and videos so you can review them. Everything happens on your iPhone. Snap Croco never uploads your photos or sends them to the developer or anyone else.</p>
-  <p>If you choose Limited Access, the app only sees the photos you selected. You can change access at any time in iOS Settings.</p>
-  <p>Marking a photo for deletion only saves your choice. Photos are moved to Recently Deleted only after you confirm at the end of a review and approve the iOS prompt. You can restore them from Recently Deleted in the Photos app for 30 days.</p>
+  <div class="card" role="list">
+    <div class="promise" role="listitem"><div class="dot" aria-hidden="true">1</div><div><strong>Stays on your iPhone</strong><span>Your photos are never uploaded. Not to me, not to anyone.</span></div></div>
+    <div class="promise" role="listitem"><div class="dot" aria-hidden="true">2</div><div><strong>No analytics</strong><span>No tracking, no usage stats, no crash-reporting SDKs.</span></div></div>
+    <div class="promise" role="listitem"><div class="dot" aria-hidden="true">3</div><div><strong>No ads</strong><span>There are no ads and no advertising networks.</span></div></div>
+    <div class="promise" role="listitem"><div class="dot" aria-hidden="true">4</div><div><strong>No account</strong><span>No sign-up, no email, no server. Just the app.</span></div></div>
+  </div>
 
-  <h2>What is stored on your device</h2>
-  <p>To let you pick up where you left off, Snap Croco saves your review choices, review progress, your preferences and reminder settings on your iPhone. A summary of your progress is shared with the Snap Croco widget on the same device.</p>
-  <p>This information never leaves your device through Snap Croco. It may be included in your own iCloud or computer backups of your iPhone, as with any app. Deleting Snap Croco removes it from your iPhone.</p>
+  <section class="card">
+    <h2>Your photos</h2>
+    <p>Snap Croco reads your library only so you can review it. It works with whatever access you give it, including Limited Access, and you can change that any time in Settings.</p>
+    <p>Marking a photo only remembers your choice. Nothing is removed until you confirm at the end of a review and approve the iOS prompt. Removed photos go to Recently Deleted, where you can get them back for 30 days.</p>
+  </section>
 
-  <h2>Apple services</h2>
-  <p>If your library uses iCloud Photos, iOS downloads full-quality photos from iCloud when you review them. That download is handled by Apple under Apple’s privacy policy.</p>
-  <p>Reminders are scheduled on your iPhone as local notifications. You can turn them off in the app or in iOS Settings.</p>
+  <section class="card">
+    <h2>What the app saves</h2>
+    <p>To pick up where you left off, the app keeps your review choices, progress, settings and reminder times on your iPhone. The home screen widget reads a small progress summary from the same device.</p>
+    <p>This data is not sent anywhere. It can be part of your own iCloud or computer backup, like any app's data. Deleting the app deletes it.</p>
+  </section>
 
-  <h2>What we collect</h2>
-  <p>Nothing. Snap Croco has no account, no server, no advertising and no analytics or tracking. We don’t collect, sell or share personal information.</p>
-  <p>If you email us or send TestFlight feedback, we only use what you send to reply and improve the app.</p>
+  <section class="card">
+    <h2>Apple services</h2>
+    <p>If you use iCloud Photos, iOS downloads full-size originals from iCloud when you open them. Apple handles that under its own privacy policy. Snap Croco never sees your Apple Account.</p>
+    <p>Reminders are local notifications scheduled on your iPhone. No push server is involved.</p>
+  </section>
 
-  <h2>Children</h2>
-  <p>Snap Croco does not collect personal information from anyone, including children.</p>
+  <section class="card">
+    <h2>What I collect</h2>
+    <p>Nothing. Snap Croco has no servers, so there is nothing to collect, sell or share.</p>
+    <p>If you email me or send TestFlight feedback, I only use what you send to reply and fix things, and I delete it when it's no longer needed.</p>
+  </section>
 
-  <h2>Changes</h2>
-  <p>If this policy changes, the new version will appear in the app and on this page with a new effective date.</p>
+  <section class="card">
+    <h2>Your rights</h2>
+    <p>Because I hold no data about you, there is nothing to access, export or delete on my side. Laws like the GDPR and CCPA still give you those rights, and you can email me any time if you have a question.</p>
+  </section>
 
-  <h2>Contact</h2>
-  <p>Questions about privacy? Email <a href="mailto:roesler1331@gmail.com">roesler1331@gmail.com</a>.</p>
+  <section class="card">
+    <h2>Children</h2>
+    <p>Snap Croco doesn't collect personal information from anyone, including children under 13.</p>
+  </section>
+
+  <section class="card">
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be in the app and on this page with a new date at the top.</p>
+  </section>
+
+  <section class="card">
+    <h2>Questions?</h2>
+    <p>I read every email myself: <a href="mailto:roesler1331@gmail.com?subject=Snap%20Croco%20privacy">roesler1331@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 Nick Roesler · <a href="support.html">Support</a></footer>
 </main>
 </body>
 </html>
